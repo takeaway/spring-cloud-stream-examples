@@ -1,0 +1,23 @@
+spring:
+  application.name: webinar-testing-demo-non-reactive
+  cloud.stream:
+    function:
+      definition: logIncoming|describeMovie|filter|logOutgoing
+    bindings:
+      logIncomingdescribeMoviefilterlogOutgoing-in-0:
+        binder: kafka
+        destination: com.takeaway.movie
+      logIncomingdescribeMoviefilterlogOutgoing-out-0:
+        binder: kafka
+        destination: com.takeaway.goodmovie
+
+function:
+  filter.rating: 3
+  description.batmantitles:
+              - "batman"
+              - "dark knight"
+
+logging.level:
+  org.apache.http: WARN
+  reactor.netty.http.client: WARN
+

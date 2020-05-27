@@ -20,3 +20,5 @@ demoproducer/mvnw.cmd
 .idea/
 
 testingdemo-reactive/testingdemo -reactive.iml
+
+testingdemo-non-reactive/non-reactive-example.iml

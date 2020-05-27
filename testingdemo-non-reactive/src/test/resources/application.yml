@@ -1,0 +1,7 @@
+
+# below config is needed to run integration test
+function:
+  filter.rating: 3
+  description.batmantitles:
+    - "batman"
+    - "dark knight"
