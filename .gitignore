@@ -16,3 +16,7 @@ demoprocessor/mvnw.cmd
 demoproducer/mvnw
 
 demoproducer/mvnw.cmd
+
+.idea/
+
+testingdemo-reactive/testingdemo -reactive.iml
